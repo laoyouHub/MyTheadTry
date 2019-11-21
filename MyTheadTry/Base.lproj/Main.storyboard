@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyTheadTry" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EIg-qf-beG">
+                                <rect key="frame" x="12" y="20" width="351" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="YWN-xA-kpH"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qXP-cx-QQ0">
+                                <rect key="frame" x="12" y="128" width="351" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="oxh-DN-TH3"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qcO-Fa-9fO">
+                                <rect key="frame" x="12" y="236" width="351" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="FQl-mb-AF7"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rIv-NK-Oiw">
+                                <rect key="frame" x="12" y="353" width="351" height="100"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iYR-TY-Dy0">
+                                <rect key="frame" x="50" y="478" width="67" height="30"/>
+                                <state key="normal" title="download"/>
+                                <connections>
+                                    <action selector="downloadImages:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kij-o6-36I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8il-Ub-yfz">
+                                <rect key="frame" x="241" y="478" width="34" height="30"/>
+                                <state key="normal" title="clear"/>
+                                <connections>
+                                    <action selector="clearDownload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sB8-Su-rbM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsc-wE-PEX">
+                                <rect key="frame" x="61" y="527" width="45" height="30"/>
+                                <state key="normal" title="cancle"/>
+                                <connections>
+                                    <action selector="cancleDownload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q8c-sf-aZc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rIv-NK-Oiw" firstAttribute="trailing" secondItem="qcO-Fa-9fO" secondAttribute="trailing" id="0e0-QE-Vib"/>
+                            <constraint firstItem="EIg-qf-beG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="5hi-Pe-m4w"/>
+                            <constraint firstItem="qcO-Fa-9fO" firstAttribute="top" secondItem="qXP-cx-QQ0" secondAttribute="bottom" constant="8" id="B7r-47-JDf"/>
+                            <constraint firstItem="rIv-NK-Oiw" firstAttribute="leading" secondItem="qcO-Fa-9fO" secondAttribute="leading" id="LyG-wb-Kn6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rIv-NK-Oiw" secondAttribute="bottom" constant="214" id="N1s-WJ-s8R"/>
+                            <constraint firstItem="iYR-TY-Dy0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="OdS-iQ-LDB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EIg-qf-beG" secondAttribute="trailing" constant="12" id="QK4-4D-JaP"/>
+                            <constraint firstItem="qXP-cx-QQ0" firstAttribute="trailing" secondItem="EIg-qf-beG" secondAttribute="trailing" id="QKj-XX-INX"/>
+                            <constraint firstItem="qXP-cx-QQ0" firstAttribute="trailing" secondItem="qcO-Fa-9fO" secondAttribute="trailing" id="Rdw-Wa-n6F"/>
+                            <constraint firstItem="rIv-NK-Oiw" firstAttribute="top" secondItem="qcO-Fa-9fO" secondAttribute="bottom" constant="17" id="U0u-VE-AU5"/>
+                            <constraint firstItem="qXP-cx-QQ0" firstAttribute="leading" secondItem="qcO-Fa-9fO" secondAttribute="leading" id="UQv-L1-7WN"/>
+                            <constraint firstItem="jsc-wE-PEX" firstAttribute="centerX" secondItem="iYR-TY-Dy0" secondAttribute="centerX" id="YPx-11-0Nx"/>
+                            <constraint firstItem="jsc-wE-PEX" firstAttribute="top" secondItem="iYR-TY-Dy0" secondAttribute="bottom" constant="19" id="ZTE-Hg-e1j"/>
+                            <constraint firstItem="EIg-qf-beG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="dvu-KY-Zmx"/>
+                            <constraint firstItem="iYR-TY-Dy0" firstAttribute="top" secondItem="rIv-NK-Oiw" secondAttribute="bottom" constant="25" id="gsP-wi-PdK"/>
+                            <constraint firstItem="qXP-cx-QQ0" firstAttribute="leading" secondItem="EIg-qf-beG" secondAttribute="leading" id="iGA-f0-mDm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8il-Ub-yfz" secondAttribute="trailing" constant="100" id="k7S-iY-och"/>
+                            <constraint firstItem="iYR-TY-Dy0" firstAttribute="baseline" secondItem="8il-Ub-yfz" secondAttribute="baseline" id="yrh-Pi-hJ9"/>
+                            <constraint firstItem="qXP-cx-QQ0" firstAttribute="top" secondItem="EIg-qf-beG" secondAttribute="bottom" constant="8" id="zho-1B-icY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="image1" destination="EIg-qf-beG" id="3Zc-Qt-nD9"/>
+                        <outlet property="image2" destination="qXP-cx-QQ0" id="74Q-ZR-A44"/>
+                        <outlet property="image3" destination="qcO-Fa-9fO" id="YWj-T3-1ST"/>
+                        <outlet property="image4" destination="rIv-NK-Oiw" id="DV6-Rb-aac"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1266" y="8"/>
+        </scene>
+    </scenes>
+</document>
